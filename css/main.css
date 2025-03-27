@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(base.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(/images/Polygon.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+main{
+    margin-left: 200px;
+    padding: 20px 0 20px 20px;
+    min-height: 737px;
+}
+
+/* Heading */
+.container-fluid{
+    background-color: #C93434;
+    max-width: 100%;
+    padding: 20px;
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-fluid h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.container-fluid p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Task */
+.container{
+    max-width: 1050px !important;
+    font-family: 'Raleway';
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 !important;
+}
+
+.assignment{
+    max-width: 520px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task{
+    background-color: #F3F3F3;
+    text-align: center;
+    padding: 20px;
+}
+
+.task-detailed{
+    background-color: #F3F3F3;
+    padding: 20px;
+}
+
+
+/* Button */
+.btn{
+    border-radius: 0% !important;
+}
+
+.result{
+    max-width: 520px !important;
+    background-color: #F3F3F3;
+    text-align: center;
+    padding: 100px;
+}
+
+@media (max-width: 768px) {
+
+    main{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-fluid h1{
+        font-size: 36px;
+    }
+
+    .container-fluid p{
+        font-size: 14px;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .heading-content {
+        text-align: right;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .assignment{
+        padding: 25px 25px 0 25px;
+    }
+
+    .task{
+        padding: 28px;
+        font-size: 14px;
+    }
+
+    .task-detailed{
+        padding: 28px;
+        font-size: 14px;
+    }
+
+    .result{
+        padding: 20px;
+        margin: 15px;
+        font-size: 14px;
+    }
+}
