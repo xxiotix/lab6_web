@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/page2_header.css">
+    <link rel="stylesheet" href="css/page2_section.css">
+    <link rel="icon" href="images/knu-logo.png" type="image/x-icon">
+        <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Work with string | Tarasenko A. S.</title>
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="navbar-brand">
+            <img src="images/knu-logo.png" alt="Логотип" style="width: 54px; height: 54px;">
+        </div>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="lab2.html"><i class="fa-solid fa-dice-two"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-dice-three"></i></a></li>
+        </ul>
+    </nav>
+    <script src="script/sidebarScript.js"></script>
+    <main class="page-two-main">
+        <header class="container-fluid">
+            <div class="col-lg-8 col-sm-12 heading">
+                <div class="heading-content">
+                    <h1>Лабораторна робота №7</h1>
+                    <p>Виконала студентка групи<br> АнД-31 - Тарасенко А. С.</p>
+                    <span>Варіант 17 (7 - для завдання №1; 4 - для завдання №2)</span>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="assignment-box">
+                    <div class="task-1">
+                        <h6>Завдання 1.</h6>
+                        <p>На сторінці є список з переліком країн, 
+                            перетворіть список на рядок де країни розділені комою.</p>
+                        <button class="col-lg-12 col-sm-12 btn btn-danger" id="updateButton">Виконати завдання №1</button>
+                    </div>
+                    <div class="result" id="result" style="display: none;">
+                        <div class="text" id="text" style="display: none;">
+                            Україна Польща США Японія Китай Німеччина Франція Італія Іспанія Канада Бразилія Індія Австралія Мексика Південна_Корея Туреччина Аргентина ПАР Швеція Нідерланди Швейцарія Бельгія Австрія Норвегія Данія Фінляндія Ірландія Сінгапур Індонезія Таїланд В'єтнам Малайзія Філіппіни Єгипет Нігерія Колумбія Перу Чилі Казахстан Греція Португалія Угорщина Чехія Ізраїль ОАЕ Катар Кувейт
+                        </div>
+                        <div class="text-result" id="text-result"></div>
+                    </div>
+                    <script src="script/strScript.js"></script>
+                </div>
+                <div class="assignment-box">
+                    <div class="task-2">
+                        <h6>Завдання 2.</h6>
+                        <p>Дана таблиця з числами. При натисканні на комірку, вона
+                            активується і стає червоного кольору. Активувати можна багато комірок. Під
+                            таблицею кнопка. При натисканні цієї кнопки в абзац нижче виведіть суму
+                            активованих комірок. Реалізуйте також кнопку “скинути активовані комірки”</p>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 table-responsive">
+                        <table class="table table-success">
+                            <tr>
+                                <td>2</td>
+                                <td>6</td>
+                                <td>4</td>
+                                <td>15</td>
+                                <td>27</td>
+                                <td>31</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>10</td>
+                                <td>1</td>
+                                <td>18</td>
+                                <td>21</td>
+                                <td>14</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>12</td>
+                                <td>7</td>
+                                <td>34</td>
+                                <td>45</td>
+                                <td>23</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>93</td>
+                                <td>54</td>
+                                <td>42</td>
+                                <td>5</td>
+                                <td>67</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>98</td>
+                                <td>23</td>
+                                <td>92</td>
+                                <td>17</td>
+                                <td>36</td>
+                                <td>29</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>57</td>
+                                <td>33</td>
+                                <td>66</td>
+                                <td>81</td>
+                                <td>19</td>
+                                <td>40</td>
+                                <td>11</td>
+                            </tr>
+                        </table>
+                    </div>                        
+                    <div class="btn-group">
+                        <button class="col-lg-12 col-sm-12 btn btn-danger" id="viewSum">Вивести суму</button>
+                        <button class="col-lg-12 col-sm-12 btn btn-danger" id="refresh">Скинути результати</button>
+                    </div>
+                    <div class="sumResult" id="sumResult" style="display: none;"></div>
+                    <script src="script/tableScript.js"></script>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
