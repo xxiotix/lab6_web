@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(/images/Polygon.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/* Task */
+.container{
+    max-width: 1050px !important;
+    font-family: 'Raleway';
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.assignment-box{
+    max-width: 520px !important;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-1, .task-2{
+    background-color: #F3F3F3;
+    text-align: justify;
+    padding: 35px !important;
+    line-height: 26px;
+}
+
+/* Button */
+.btn{
+    border-radius: 0% !important;
+}
+
+.btn-group{
+    display: flex;
+    gap: 10px;
+}
+
+/* Task Done */
+
+.result{
+    max-width: 520px;
+    min-height: 120px;
+    background-color: #e5ffdd;
+    text-align: center;
+    padding: 60px;
+}
+
+.table-responsive {
+    max-width: 600px !important;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table{
+    border-collapse: separate !important;
+    border-spacing: 5px;
+}
+
+td{
+    text-align: center;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 4px;
+    padding: 13px !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+td:hover{
+    background: #e37b90 !important;
+    cursor: pointer;
+}
+
+td:active {
+    transform: scale(0.95);
+    background: #dee2e6;
+}
+
+td.selected {
+    background: #ff4d4d !important;
+}
+
+.sumResult{
+    padding: 10px;
+    background-color: #e5ffdd;
+    font-weight: 500;
+}
+
+@media (max-width: 768px){
+
+    .page-two-main{
+        padding: 0;
+        margin: auto;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .assignment-box{
+        flex-wrap: wrap;
+    }
+
+    .task-1,.task-2{
+        padding: 28px;
+        font-size: 14px;
+    }
+
+    .result,.sumResult{
+        font-size: 14px;
+    }
+}
