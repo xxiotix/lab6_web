@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(/images/Polygon.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/* all blocks */
+.container {
+    max-width: 1050px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+h1, h6 {
+    color: #8B0000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+
+.field-input, .potato-input {
+    width: 48%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* button */
+.calculate-btn,.reset-btn {
+    border-radius: 0 !important;
+    transition: 0.3s;
+    border: none;
+}
+
+.calculate-btn:hover {
+    background-color: #c00000;
+    box-shadow: 0 0 10px rgba(192, 0, 0, 0.5);
+}
+
+/* input group */
+.input-group {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #8B0000;
+    background-color: #fff;
+    font-size: 16px;
+    color: #8B0000;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input:focus {
+    border-color: #c00000;
+    box-shadow: 0 0 10px rgba(192, 0, 0, 0.5);
+}
+
+.label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #555;
+    transition: 0.3s ease;
+    background: #fff;
+    padding: 0 5px;
+}
+
+.input:focus {
+    border-color: #c00000;
+    box-shadow: 0 0 8px rgba(192, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+.input:focus ~ .label,
+.input:not(:placeholder-shown) ~ .label {
+    top: 0;
+    left: 10px;
+    font-size: 14px;
+    color: #8B0000;
+}
+
+.input,
+.label {
+    transition: all 0.3s ease-in-out;
+}
